@@ -1,0 +1,33 @@
+Problem 1: 
+An online news organization wants to transform the top three longest words from a newspaper headline into hashtags.
+Task: Write a Java program to accomplish this task.
+Examples:
+getHashTags("How the Avocado Became the Fruit of the Global Trade")
+➞ ["#avocado", "#became", "#global"]
+getHashTags("Why You Will Probably Pay More for Your Christmas Tree This Year")
+➞ ["#christmas", "#probably", "#will"]
+getHashTags("Hey Parents, Surprise, Fruit Juice Is Not Fruit")
+➞ ["#surprise", "#parents", "#fruit"]
+getHashTags("Visualizing Science")
+➞ ["#visualizing", "#science"]
+
+Notes:
+1.	If the title is less than three words, just order the words in the title by length in descending order (see example #4).
+2.	Punctuation does not count towards a word's length.
+3.	If multiple words tie for the same length, retrieve the word that occurs first.
+
+Problem 2: 
+A number or its descendant can be palindrome. A number's direct child is created by summing each pair of adjacent digits to create the digits of the next number. For instance, 123312 is not a palindrome, but its next child 363 is, where: 3 = 1 + 2; 6 = 3 + 3; 3 = 1 + 2.
+Task: Write a Java program that returns true if the number itself is a palindrome or any of its descendants down to 2 digits (a 1-digit number is trivially a palindrome).
+Examples:
+palindromedescendant(11211230) ➞ true
+// 11211230 ➞ 2333 ➞ 56 ➞ 11
+palindromeDescendant(13001120) ➞ true
+// 13001120 ➞ 4022 ➞ 44
+palindromeDescendant(23336014) ➞ true
+// 23336014 ➞ 5665
+palindromeDescendant(11) ➞ true
+// Number itself is a palindrome.
+
+Notes:
+Numbers will always have an even number of digits.
